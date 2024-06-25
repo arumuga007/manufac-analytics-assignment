@@ -56,5 +56,4 @@ yarn start
 
 Here is a screenshot of the application:
 
-![Screenshot](./assets/Outputscreenshot.png)
-
+![Screenshot](./assets/outputScreenshot.png)

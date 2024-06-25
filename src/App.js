@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import MaxMinCropProduction from './components/maxMinCropProduction/MaxMinCropProduction';
+import AverageCropProduction from './components/averageCropProduction/AverageCropProduction';
+import indianAgricultureDataset from './dataset/Manufac _ India Agro Dataset.json'
 
 function App() {
+
+  const styles = {
+    boxSizing: 'border-box',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '2em',
+    padding: '1em 0em'
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles}>
+      <MaxMinCropProduction dataset={indianAgricultureDataset}/>
+      <AverageCropProduction dataset={indianAgricultureDataset}/>
     </div>
   );
 }

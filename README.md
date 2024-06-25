@@ -54,3 +54,7 @@ yarn start
 
 ## screenshots:
 
+Here is a screenshot of the application:
+
+![Screenshot](./assets/Outputscreenshot.png)
+
